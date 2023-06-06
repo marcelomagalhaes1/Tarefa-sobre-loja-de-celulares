@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Samsung</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background: #e8e6e7;
+}
+header{
+    padding: 20px 70px;
+    background: #1d1d1f;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation .logo{
+    width: 130px;
+    opacity: .40;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.navigation ul li a{
+    color: #888;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+.navigation ul li a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.navigation .check{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+.main-text img{
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+.main-text h3{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.main-text p{
+    margin-bottom: 1.5rem;
+}
+.main-text h6{
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.main-text .btn{
+    padding: 10px 25px;
+    background: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.main-text .btn:hover{
+    opacity: .85;
+}
+.main-text .text h5{
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.main-text .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-text .content span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+}
+#azulbb{
+    background: #bfddf3;
+}
+
+.main-img img{
+    width: 500px;
+    transform: rotate(-7deg);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: #bfddf3;
+    clip-path: circle(700px at right 950px);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="https://www.samsung.com/br/"><img src="img/logo2.png" alt="Logo da Samsung" class="logo"></a>
+            <ul>
+                <li><a href="index.html" class="check">Home</a></li>
+                <li><a href="SamsungS23.html" class="check">Samsung 23</a></li>
+                <li><a href="Samsung.html" class="check">Samsung 23+</a></li>
+                <li><a href="SamsungA13.html" class="check">Samsung A13</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="img/a13.jpg" alt="">
+                <h3>Seu novo Samsung.</h3>
+                <p>Com uma câmera impressionante. Um aumento notável na duração da bateria. E novos recursos de foto e vídeo. <br> No Samsung A13, você faz coisas que em outro celular nunca pode.</p>
+                <h6>A partir de R$ 1.129,00</h6>
+                <div class="text">
+                   <h5>Cor Disponível:</h5>
+                </div>
+                <div class="content">
+                    <span id="azulbb" onclick="imgSlider('img/a13.jpg'); circleChange('#445c42')"></span>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="img/a13.jpg" alt="Imagem do Samsung" id="phone">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
